@@ -1,0 +1,108 @@
+<!-- Project using OpenWeather API -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather-mood</title>
+    <!-- favicon link -->
+    <script
+      src="https://kit.fontawesome.com/a4ceb3bfd3.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- linking my CSS file -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- linking my JS file -->
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- container starts -->
+    <div class="main-container h-[100vh] bg-[#03203C] mx-auto">
+      <!-- search-bar starts -->
+      <div class="search-bar flex justify-center w-[100%] py-10">
+        <form class="w-[80%]">
+          <input
+            type="text"
+            name="search-bar"
+            id="search-bar"
+            placeholder="Enter latitude"
+            class="w-[100%] py-1 px-2 rounded-sm text-xl font-semibold font-mono text-[#03203C] latitude"
+          />
+          <input
+            type="text"
+            name="search-bar"
+            id="search-bar"
+            placeholder="Enter longitude"
+            class="w-[100%] py-1 px-2 rounded-sm text-xl font-semibold font-mono text-[#03203C] longitude mt-2"
+          />
+          <button
+            type="submit"
+            class="bg-[#4796f7] text-white font-medium mt-5 py-1 px-5 rounded-md text-lg"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+      <!-- search-bar ends -->
+
+      <!-- content-box starts -->
+      <div class="content-box w-[80%] mx-auto hidden felx-wrap justify-between">
+        <!-- city name box starts -->
+        <div
+          class="content bg-[#4796f7] px-2 py-5 flex items-center gap-5 text-white rounded-md mx-2"
+        >
+          <div class="icon text-[#03203C]">
+            <i class="fa-solid fa-city fa-2xl"></i>
+          </div>
+          <div class="value text-3xl font-bold text-white font-mono">
+            cityname
+          </div>
+        </div>
+        <!-- city name box ends -->
+
+        <!-- temprature box starts -->
+        <div
+          class="content bg-[#4796f7] px-2 py-5 flex items-center gap-5 text-white rounded-md mx-2"
+        >
+          <div class="icon text-[#03203C]">
+            <i class="fa-solid fa-temperature-high fa-2xl"></i>
+          </div>
+          <div class="value text-3xl font-bold text-white font-mono">
+            31&deg;C Temprature
+          </div>
+        </div>
+        <!-- temprature box ends -->
+
+        <!-- humidity box starts -->
+        <div
+          class="content bg-[#4796f7] px-2 py-5 flex items-center gap-5 text-white rounded-md mx-2"
+        >
+          <div class="icon text-[#03203C]">
+            <i class="fa-solid fa-wind fa-2xl"></i>
+          </div>
+          <div class="value text-3xl font-bold text-white font-mono">
+            2500 hpa
+          </div>
+        </div>
+        <!-- humidity box ends -->
+
+        <!-- atmosphere box starts -->
+        <div
+          class="content bg-[#4796f7] px-2 py-5 flex items-center gap-5 text-white rounded-md mx-2"
+        >
+          <div class="icon text-[#03203C]">
+            <i class="fa-solid fa-hurricane fa-2x"></i>
+          </div>
+          <div class="value text-3xl font-bold text-white font-mono">
+            clouds
+          </div>
+        </div>
+        <!-- atmosphere box ends -->
+      </div>
+      <!-- content-box ends -->
+    </div>
+
+    <!-- container ends -->
+  </body>
+</html>
