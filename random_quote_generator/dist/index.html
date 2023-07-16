@@ -1,0 +1,42 @@
+<!-- Ramdom quote generator using API-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote generator</title>
+    <!-- linking my CSS file -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- linking my JS file -->
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div
+      class="bg-slate-100 h-screen main-container flex justify-start flex-col items-center"
+    >
+      <!-- heading -->
+      <h1
+        class="font-mono font-semibold text-2xl text-center md:text-4xl md:py-2 px-3 h-[10vh] mt-3 border-b border-black"
+      >
+        Random Quote Generator [API]
+      </h1>
+
+      <!-- button -->
+      <button
+        class="border-2 border-black rounded-lg font-semibold px-3 py-1 mt-10 animate-pulse"
+      >
+        Generate code
+      </button>
+
+      <!-- quote displayer -->
+      <div class="quote-displayer p-5 mt-20 rounded-lg bg-white mx-5 hidden">
+        <div class="quote italic text-lg">
+          hello Lorem ipsum dolor sit amet. Lorem, ipsum dolor. Lorem, ipsum
+          dolor.
+        </div>
+        <div class="author text-right font-semibold">- author</div>
+      </div>
+    </div>
+  </body>
+</html>
