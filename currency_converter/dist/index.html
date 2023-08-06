@@ -1,0 +1,100 @@
+<!-- coversion of any currency you want -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covertio</title>
+    <!-- font-awesome links -->
+    <script
+      src="https://kit.fontawesome.com/a4ceb3bfd3.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- linking my CSS file -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- linking my JS file -->
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- container starts -->
+    <div class="container mx-auto my-5">
+      <!-- heading starts -->
+      <div class="heading">
+        <h1 class="text-center text-orange-500 font-bold text-5xl mb-3">
+          Convertio
+        </h1>
+        <h3 class="text-center mb-4 text-xl text-[#919191]">
+          convert your currency into any currency you want
+        </h3>
+        <hr />
+      </div>
+      <!-- heading ends -->
+
+      <!-- currency-input box starts -->
+      <div class="form my-10">
+        <!-- form starts -->
+        <form
+          action="#"
+          method="post"
+          class="flex flex-col justify-center items-center w-full gap-3"
+        >
+          <div class="from w-full flex justify-center gap-5">
+            <input
+              type="text"
+              name="base-country"
+              id="base-country"
+              placeholder="Base country name"
+              class="w-[30%] border p-2 border-slate-400"
+            />
+            <input
+              type="number"
+              name="amount"
+              id="amount"
+              placeholder="Amount"
+              class="p-2 border border-slate-400"
+            />
+          </div>
+          <div class="to w-full flex justify-center gap-5">
+            <input
+              type="text"
+              name="target-country"
+              id="target-country"
+              placeholder="Target country name"
+              class="w-[47%] border p-2 border-slate-400"
+            />
+          </div>
+          <button
+            type="submit"
+            class="border px-3 py-2 mt-5 bg-orange-500 border-none text-white font-semibold text-lg"
+          >
+            convert
+          </button>
+        </form>
+        <!-- form ends -->
+      </div>
+      <!-- currency-input box ends -->
+
+      <!-- results-displayer box starts -->
+      <div
+        class="result-displayer flex flex-col justify-center items-center border h-[30vh] invisible"
+      >
+        <span
+          class="text-orange-500 font-semibold text-6xl flex items-center w-full"
+        >
+          <span class="font-mono base-box w-[45%] text-right">1 USD</span>
+          <i
+            class="fa-solid fa-money-bill-transfer text-4xl mx-10 text-indigo-600 animate-spin"
+          ></i>
+          <span class="font-mono target-box w-[45%]">92 INR</span>
+        </span>
+        <span class="mt-5 text-[#919191] text-2xl exchange-rate-box">
+          Exhange rate from USD to INR is - 92.234
+        </span>
+      </div>
+      <!-- results-displayer box ends -->
+    </div>
+
+    <!-- container ends -->
+  </body>
+</html>
